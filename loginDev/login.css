@@ -5,6 +5,8 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
 }
 
 .conteiner{
@@ -13,35 +15,55 @@ body{
     align-items: center;
     height: 100vh;
     
+    
 }
 .Content{
     background-color: white;
     justify-content: space-between;
     align-items: center;/*eixo y*/
     background-color: rgb(94, 92, 92);
-    border-radius: 15px;
-    width: 80%;
+    border-radius: 30px;
+    width: 960px;
     height: 50%;
     position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
 }
 
 .Content::before{
     content: "";
     position: absolute;
-    background-image: url('/e-commerce/img/crie_um_logotipo_de_uma_loja_de_games_chamada_p.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 38%;
+    background-color:#c91c1c ;
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    width: 40%;
     height: 100%;
+    border-radius: 30px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius:100px; 
     
 }
 
 .first-content{
     display: flex;
     
-    
-    
 }
+.second-content{
+    position:absolute;
+    display: flex;
+}
+.first-content .second-column{
+    z-index: 2;
+
+}
+.second-content .first-column{
+    z-index: -1;
+    order: 2;
+}
+.second-content .second-column{
+    z-index: -1;
+    order: 1;
+}
+
 
 .title{
     
@@ -52,12 +74,19 @@ body{
 .title-color{
     color: white;
 }
+.title-custom{
+    color: #c91c1c;
+    
+}
 
 .description{
     font-size: 14px;
     font-weight: 300;
     color: #fff;
     line-height:30px ;
+}
+.description-second{
+    color: #7f8c8d;
 }
 
 .btn{
@@ -66,28 +95,141 @@ body{
     color: #fff;
     font-size: 10px;
     padding: 10px 50px;
+    cursor :pointer;
+    width: 150px ;
+    align-self: center;
+    border: 0;
+    margin-top: 1rem;
 }
 .btn-custom{
     background-color: transparent;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+.btn-custom:hover {
+    background-color: #fff;
+    color: #c91c1c;
+    transform: scale(1.1);
+}
+.btn-second{
+    background-color: #c91c1c;
+    border: 1px solid #c91c1c;
+    transition: 0.5s;
+}
+.btn-second:hover{
+    background-color: #fff;
+    border: 1px solid #c91c1c;
+    color: #c91c1c;
+    transform: scale(1.1);
+    
+
 }
 
 
 .first-column{
     text-align: center;
-    flex: 1 0 auto;
+    width: 40%;
     z-index: 1;
+    
 }
 .second-column{
-    flex: 2 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.second-content{
-    position:absolute;
-    display: none;
-}
+
 .form{
     display: flex;
     flex-direction:column ;
+    width: 55%;
+    
 
 }
+.link-password{
+    color: #7f8c8d;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 10px 0;
+    text-align: center;
+}
+.link-password::first-letter{
+    text-transform: capitalize;
+}
 
+.form input{
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+    outline: none;
+    width: 100%;
+
+}
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.icon-custom{
+    color: #7f8c8d;
+    padding:0 5px;
+}
+
+
+/*transição de login para cadastro*/
+
+.sign-in .first-content .first-column ,.sign-in .first-content .second-column {
+    z-index: -1;
+}
+
+.sign-in .second-content .first-column,.sign-in .second-content .second-column{
+    z-index: 10;
+}
+
+.sign-in .Content::before{
+    left: 60%;
+    /*border-top-left-radius: 100px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 100px;*/
+   
+    
+
+    animation: slidein 1s ;
+}
+
+
+.sign-up .second-content .first-column, .sign-up .second-content .second-column {
+    z-index: -1;
+}
+
+.sign-up .first-content .first-column, .sign-up .first-content .second-column{
+    z-index: 10;
+}
+
+/*Animação */
+
+@keyframes slidein{
+    from{
+        left: 0;
+        width: 40%;
+    }
+    50%{
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 100px;
+
+    }
+    to{
+        left: 60%;
+        width: 40%;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 100px;
+
+    }
+}
