@@ -177,6 +177,7 @@ body{
     background-color: #ecf0f1;
     outline: none;
     width: 100%;
+    border-radius: 20px;
 
 }
 .label-input{
@@ -184,6 +185,7 @@ body{
     display: flex;
     align-items: center;
     margin: 8px;
+    border-radius: 20px;
 }
 .icon-custom{
     color: #7f8c8d;
