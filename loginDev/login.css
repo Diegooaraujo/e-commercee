@@ -16,6 +16,7 @@ body{
     height: 100vh;
     
     
+    
 }
 .Content{
     background-color: white;
@@ -27,6 +28,7 @@ body{
     height: 50%;
     position: relative;
     box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    overflow: hidden;
 }
 
 .Content::before{
@@ -106,6 +108,17 @@ body{
     border: 1px solid #fff;
     transition: 0.5s;
 }
+.btn-edit{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+.btn-edit:hover{
+    background-color: #fff;
+    color: #c91c1c;
+    transform: scale(1.1);
+}
+
 .btn-custom:hover {
     background-color: #fff;
     color: #c91c1c;
@@ -184,43 +197,137 @@ body{
     z-index: -1;
 }
 
-.sign-in .second-content .first-column,.sign-in .second-content .second-column{
+.sign-in .second-content .second-column{
+    position: relative;
+    animation: test 1s;
     z-index: 10;
+}
+.sign-in .second-content .first-column{
+    z-index: 13;
+    
 }
 
 .sign-in .Content::before{
     left: 60%;
-    /*border-top-left-radius: 100px;
+    border-top-left-radius: 100px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
-    border-bottom-left-radius: 100px;*/
-   
-    
-
+    border-bottom-left-radius: 100px;
     animation: slidein 1s ;
+    z-index: 12;
+}
+
+.sign-up .Content::before{
+    animation: slideup 1s;
+    left: 0%;
+    z-index: 12; 
+     
 }
 
 
 .sign-up .second-content .first-column, .sign-up .second-content .second-column {
     z-index: -1;
+    
 }
 
-.sign-up .first-content .first-column, .sign-up .first-content .second-column{
+
+ .sign-up .first-content .second-column{
+    position: relative;
+    animation: fora-para-dentro 1s;
     z-index: 10;
 }
+.sign-up .first-content .first-column{
+    position: relative;
+    animation: test 1s;
+    z-index: 13;
+}
+.sign-in .first-content .first-column{
+    position: relative;
+    animation: dentro-para-fora 1s;
+}
+.sign-in .first-content .second-column{
+    animation: dentro-para-fora 1s;
+    
+    
+}
+.sign-up .second-content .second-column{
+    position: relative;
+    animation: dentro-para-fora 1s;
+}
+.sign-up .second-content .first-column{
+    position: relative;
+    animation: deslocamento 1s;
+} .sign-in .second-content .first-column{
+    position: relative;
+    animation: fora-para-dentro 1s;
+}
+
+
+
+/*Animação de deslocamento */
+.sign-in .first-content .second-column{
+    z-index: -1;
+    position: relative;
+    animation: deslocamento 1s;
+    
+}
+@keyframes deslocamento {
+    from{
+        left: 0;
+        
+        z-index: 15;
+    }
+    to{
+        left: +500px;
+        
+        z-index: 15;
+        
+    }
+    
+    
+}@keyframes fora-para-dentro {
+    from{
+        left: +500px;
+        z-index: 15;
+    }to{
+        left: 0;
+        z-index: 15;
+    }
+}
+
+@keyframes test {
+    from{
+        left: -600px;
+        z-index: 15;
+    }to{
+        left: 0;
+        z-index: 15;
+    }
+} 
+@keyframes dentro-para-fora {
+    from{
+        left: 0;
+        z-index: 15;
+    }
+    to{
+        left: -600px;
+        z-index: 15;
+    }
+}
+
+
 
 /*Animação */
+
+
 
 @keyframes slidein{
     from{
         left: 0;
         width: 40%;
-    }
-    50%{
-        border-top-left-radius: 100px;
-        border-bottom-right-radius: 30px;
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 100px;
+        border-radius: 30px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius:100px; 
 
     }
     to{
@@ -231,5 +338,22 @@ body{
         border-top-right-radius: 30px;
         border-bottom-left-radius: 100px;
 
+    }
+}
+@keyframes slideup {
+    from{
+        left: 60%;
+        width: 40%;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 100px;
+    }
+    top{
+        left: 0%;
+        width: 40%;
+        border-radius: 30px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius:100px;
     }
 }
