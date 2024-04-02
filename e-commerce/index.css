@@ -23,11 +23,13 @@ body{
     top: 0;
     box-shadow: 10px 0px 10px #2c2c2c;
     z-index: 99;
+    
 }
 .navbar .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .nav ul{
     display: flex ;
@@ -94,6 +96,7 @@ section.slider{
     width: 50%;
     height: auto;
     padding: 0 !important;
+    margin-top: 1rem;
     
 }
 .slider-content{
@@ -118,7 +121,7 @@ section.slider{
 /*navegação*/
 .nav-manual, .nav-auto {
     position: absolute;
-    margin-left:25%;
+    margin-left:23%;
     margin-top: 30%;
     display: flex;
     justify-content: center;
