@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #ebe4ce;
+}
+.content{
+  
+  display: flex;
+  
+  align-items: center;
+  width: 60%;
+  height: 70%;
+  border-radius: 20px;
+  overflow: hidden;
+  
+
+}
+.fundo{
+  
+  width: 1280px;
+  height: 1280px;
+  background-color: #660fc8;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  left: -330px;
+  bottom: -620px;
+}
+
+.fundo:before{
+  content: '';
+  width: 1280px;
+  height: 1280px;
+  background-color: #660fc8;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  left: 1200px;
+  top: -1150px;
+}
+
+.left{
+  width:50%;
+  left: 0;
+  
+  
+}
+.left img{
+  width: 100%;
+  height: 100%;
+}
+.right{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width:50%;
+  
+}
+
+.container {
+  background-color: rgba(245, 245, 245, 0.527);
+  padding: 6px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+form {
+  position: absolute;
+  margin-top: 190px;
+  transition: .5s;
+  width: 100%;
+  height: 400px;
+  
+  
+}
+.conteiner-form p{
+  font-size: 16px;
+}
+
+.conteiner-form{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.buttonsForm {
+  margin-top: 130px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 blueviolet;
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 29px;
+}
+
+.btnColor {
+  position: absolute;
+  width: 108px;
+  height: 100%;
+  background: linear-gradient(to right, #5956e9, #a963f8);
+  border-radius: 30px;
+  transition: .3s;
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 20px;
+  border-radius: 60px;
+  padding: 20px 40px;
+  outline: none;
+  width: 100%;
+  background-color: #5856e963;
+  
+}
+
+
+button[type="submit"] {
+  background: #660fc8;
+  color: white;
+  border-radius: 30px;
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button[type="submit"]:hover{
+  transform:scale(1.1);
+  box-shadow: 0px 0px 8px #660fc8;
+}
+
+
+
+#signin {
+  
+  left:17%;
+}
+
+#signup {
+  left: 1000px;
+}
+
+i {
+  position: absolute;
+  left: 0;
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
+.iEmail {
+  top: 104px;
+
+}
+
+.iPassword {
+  top: 183px;
+}
+
+.iPassword2 {
+  top: 262px;
+}
