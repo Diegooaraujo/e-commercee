@@ -55,6 +55,7 @@ body {
 .left{
   width:50%;
   left: 0;
+  height: 100%;
   
   
 }
@@ -188,4 +189,37 @@ i {
 
 .iPassword2 {
   top: 262px;
+}
+
+@media screen and (max-width: 1400px){
+  .buttonsForm{
+    margin-top: 30px;
+  }
+  form{
+    margin-top: 100px;
+  }
+  .conteiner-form{
+    width: 70%;
+  }
+  button[type="submit"]{
+    margin-top: 6%;
+  }
+  input[type="text"], input[type="password"]{
+    margin-top: 6%;
+    padding: 10px 35px;
+  }
+  i{
+    font-size: 17px;
+  }
+  .iEmail{
+    top: 92px;
+  }
+  .iPassword{
+    top: 148px;
+  }
+  .iPassword2 {
+    top: 205px;
+  }
+  
+  
 }
