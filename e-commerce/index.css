@@ -250,6 +250,7 @@ section.slider{
     border-radius: 20px;
     margin-bottom: 40px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.521);
+
 }
 .pc{
     background-image: url("img/img_de_jogos/fundo_pc.jpg");
@@ -281,6 +282,81 @@ section.slider{
     background-color: #868686;
     margin: 0 auto;
     margin-top: 10px;
+    overflow: hidden;
+    
+}
+/*IMAGENS*/
+/*playstation*/
+#god_of_war{
+    background-image: url(img/img_de_jogos/god_of_war.webp);
+    background-position: center;
+    background-size: cover;
+}
+#the_last_of_us{
+    background-image: url(img/img_de_jogos/the_last_of_us.webp);
+    background-position-x: -150px;
+    background-size: cover;
+}
+#spiderman{
+    background-image: url(img/img_de_jogos/miles_morales.webp);
+    background-position: -140px;
+    background-size: cover;
+}
+#vermais{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+/*Nitendo*/
+#superMario{
+    background-image: url(img/img_de_jogos/super_mario_party.webp);
+    background-position: center;
+    background-size: cover;
+}
+#pokemon{
+    background-image: url(img/img_de_jogos/pokemon_scarlet.webp);
+    background-position-x: -160px;
+    background-size: cover;
+}
+#hyrule{
+    background-image: url(img/img_de_jogos/Hyrule_Warriors_Age_of_Calamity.webp);
+    background-position: -110px;
+    background-size: cover;
+}
+/*XBOX*/
+#fc24{
+    background-image: url(img/img_de_jogos/fifa_24.webp);
+    background-position: center;
+    background-size: cover;
+}
+#payDay{
+    background-image: url(img/img_de_jogos/payday.webp);
+    background-position-x: -180px;
+    background-size: cover;
+}
+#seaOfThieves{
+    background-image: url(img/img_de_jogos/sea_of_thieves.webp);
+    background-position: -100px;
+    background-size: cover;
+}
+
+/*PC*/
+#gta{
+    background-image: url(img/img_de_jogos/gta_v.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#valorant{
+    background-image: url(img/img_de_jogos//VALORANT_Logo_V.png);
+    background-position-x: -130px;
+    background-size: cover;
+}
+#read_dead{
+    background-image: url(img/img_de_jogos/read_dead.webp);
+    background-position: -100px;
+    background-size: cover;
 }
 
 
@@ -289,6 +365,12 @@ section.slider{
 
 /*footer*/
 footer{
-    background-color: green;
-    height:100px ;
+    background-color: #868686;
+    height:200px ;
+
+}
+footer p {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
 }
